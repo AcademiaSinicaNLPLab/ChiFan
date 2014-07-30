@@ -34,25 +34,19 @@ html, body
     color:    #ddd;
 }
 
-/*	.row
-	{
-		background: red;
-	}
-	*/
 		.block
 		{
-			margin-top: 32px;
+			margin-top: 48px;
 		}
 		input[type="text"]
 		{
-			/*width: 80%;*/
+			
 			width: 256px;
 
-			height: 72px;
-			/*font-family: ;*/
+			height: 96px;
 
 			font-size: 42px;
-			/*line-height: 48px;*/
+			
 
 			outline: none;
 
@@ -62,7 +56,6 @@ html, body
 			padding: 12px;
 			color: #444;
 			font-family: 'Changa One', cursive;
-			/*font-family: 'Yanone Kaffeesatz', Verdana;*/
 			letter-spacing: 3px;
 
 

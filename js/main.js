@@ -35,10 +35,11 @@ function choice(list, num)
 }
 
 
+
 function bindInputEvents()
 {
     var target = $('.button').find('span');
-    
+
     $('input[type="text"]').keydown(function(e){
         if( e.which == 32)
         {
@@ -73,37 +74,18 @@ function bindInputEvents()
 
         }else
         {
+            
             candidates = shuffle(candidates);
             var res = choice(candidates, num);
             $('.result').slideUp(100, function(){
                 $('.result').text(res);
-            }).slideDown(250);
+                
+            }).slideDown(250, function(){
+                var audio = document.getElementsByTagName('audio')[0];
+                audio.play();
+            });
             
         }
-
-        // if(!isNaN(raw_input))
-        // {
-        //     var num = 
-
-            
-        //     // console.log(num);
-
-        //     
-
-        //     
-
-        //     
-        // }
-
-//         $('.result').slideUp(100, function(){
-//         
-
-// else
-//             {
-
-//             }
-//         }).slideDown(250);
-
 
     });    
 }
