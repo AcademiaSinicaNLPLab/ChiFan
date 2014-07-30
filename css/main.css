@@ -74,6 +74,14 @@ html, body
 			box-shadow: inset 1px 2px 2px #eee;
 		}
 
+		.result-wrap
+		{
+			margin-top: 24px;	
+		}
+			.result
+			{
+				font-size: 36px;
+			}
 
 footer 
 {
