@@ -1,0 +1,84 @@
+/*@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);*/
+@import url(http://fonts.googleapis.com/css?family=Changa+One);
+
+.hide
+{
+	display: none;
+}
+
+.text-center
+{
+	text-align: center;
+}
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	clear: both;
+	width: 100%;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ddd;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ddd;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ddd;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ddd;
+}
+
+/*	.row
+	{
+		background: red;
+	}
+	*/
+		.block
+		{
+			margin-top: 32px;
+		}
+		input[type="text"]
+		{
+			/*width: 80%;*/
+			width: 256px;
+
+			height: 72px;
+			/*font-family: ;*/
+
+			font-size: 42px;
+			/*line-height: 48px;*/
+
+			outline: none;
+
+			border: 2px solid #ccc;
+
+			border-radius: 5px;
+			padding: 12px;
+			color: #444;
+			font-family: 'Changa One', cursive;
+			/*font-family: 'Yanone Kaffeesatz', Verdana;*/
+			letter-spacing: 3px;
+
+
+		}
+		input[type="text"]:focus
+		{
+			/*border: 1px solid #aaa;*/
+			border: 2px solid #aaa;
+			box-shadow: inset 1px 2px 2px #eee;
+		}
+
+
+footer 
+{
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+	color: #666;
+}
