@@ -38,9 +38,10 @@ function choice(list, num)
 
 function bindInputEvents()
 {
-    var target = $('.button').find('span');
+    var target = $('.button');
+    var input = $('#input-area');
 
-    $('input[type="text"]').keydown(function(e){
+    input.keydown(function(e){
         if( e.which == 32)
         {
             // target.click();
@@ -59,13 +60,13 @@ function bindInputEvents()
         }
     });
 
-    var input = $('input[type="text"]');
-
     target.click(function(){
 
         var raw_input = $.trim(input.val());
 
         var num = parseInt(raw_input);
+
+        console.log(num);
 
         if(isNaN(num))
         {
@@ -74,17 +75,19 @@ function bindInputEvents()
 
         }else
         {
-            
             candidates = shuffle(candidates);
             var res = choice(candidates, num);
             $('.result').slideUp(100, function(){
                 $('.result').text(res);
                 
             }).slideDown(250, function(){
+
+                // alert('!');
+
                 var audio = document.getElementsByTagName('audio')[0];
+                // var audio = document.getElementById('audio-ding');
                 audio.play();
             });
-            
         }
 
     });    

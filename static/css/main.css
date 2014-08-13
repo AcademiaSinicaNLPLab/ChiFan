@@ -3,15 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);*/
 @import url(http://fonts.googleapis.com/css?family=Changa+One);
 
-.hide
-{
-	display: none;
-}
 
-.text-center
-{
-	text-align: center;
-}
 html, body 
 {
 	margin: 0;
@@ -19,6 +11,23 @@ html, body
 	clear: both;
 	width: 100%;
 }
+.hide
+{
+	display: none;
+}
+input
+{
+	outline: none;
+}
+.text-center
+{
+	text-align: center;
+}
+.block
+{
+	margin-top: 5%;
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #ddd;
 }
@@ -33,34 +42,47 @@ html, body
 :-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #ddd;
 }
+	.row
+	{
 
-		.block
+	}
+		.row .col
 		{
-			margin-top: 48px;
+
 		}
-		input[type="text"]
+		.row .col:nth-child(1)
 		{
-			
-			width: 256px;
+			background: red
+		}
+		.row .col:nth-child(2)
+		{
+			background: blue
+		}
+		.row .col:nth-child(3)
+		{
+			background: brown
+		}				
 
-			height: 96px;
 
-			font-size: 42px;
-			
+		input#input-area
+		{	
+			width: 90%;
+			max-width: 512px;
 
-			outline: none;
+			height: 50%;
+
+			font-size: 5.5em;
+			font-family: "Changa One", cursive;
 
 			border: 2px solid #ccc;
 
 			border-radius: 5px;
 			padding: 12px;
 			color: #444;
-			font-family: 'Changa One', cursive;
+			
 			letter-spacing: 3px;
-
-
 		}
-		input[type="text"]:focus
+		input#input-area:focus
 		{
 			/*border: 1px solid #aaa;*/
 			border: 2px solid #aaa;
@@ -75,6 +97,8 @@ html, body
 			{
 				font-size: 36px;
 			}
+
+
 
 footer 
 {
